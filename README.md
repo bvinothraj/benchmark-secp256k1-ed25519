@@ -1,18 +1,20 @@
-# secp256k1 vs ed25519 Benchmark
+# secp256k1 vs. ed25519 Benchmark
 
-This repository presents a performance benchmark of two elliptic-curve cryptographic algorithms: secp256k1 and ed25519. The comparison focuses on three core cryptographic operations:
-Key generation
-Digital signing
-Signature verification
+This repository presents a performance benchmark of two elliptic-curve cryptographic algorithms: `secp256k1` and `ed25519`. The comparison focuses on three core cryptographic operations:
+- Key generation
+- Digital signing
+- Signature verification
 
-Both algorithms are widely adopted in real-world systems — secp256k1 forms the backbone of Bitcoin, Ethereum, and other blockchain platforms, while ed25519 is the preferred choice in modern security protocols such as SSH and TLS, as well as blockchain networks like Polkadot and Solana.
+What Makes These Algorithms Popular
+- secp256k1 is the backbone of Bitcoin, Ethereum, and other major blockchains.
+- ed25519 is favored in modern security protocols like SSH, TLS, and newer blockchains such as Polkadot and Solana.
 
-This work is motivated by the limited availability of direct, reproducible benchmarks contrasting these two algorithms. By providing consistent measurement results, the project aims to support data-driven decision-making for cryptographic implementations
+The motivation for this work was the limited availability of direct, reproducible benchmarks contrasting these two algorithms. By providing consistent measurement results, the project aims to support data-driven decision-making for cryptographic implementations.
 
 ![ed25519 vs. secp256k1](benchmark_comparison.png)
 
 
-It has two Python programs:
+This repository has two Python programs:
 
 - **benchmark.py**  
   Runs performance tests on both algorithms and generates two CSV files:  
